@@ -1,0 +1,45 @@
+<html>
+    <head> <title>QR-Code Generator</title>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+     <link rel="stylesheet" href="style.css">
+     <script>
+        function openQRPage() {
+            const text = document.getElementById("text").value.trim();
+            const pattern = /^(https?:\/\/)?([\w\-]+\.)+[\w\-]+(\/[\w\-._~:/?#[\]@!$&'()*+,;=]*)?$/;
+            if (!pattern.test(text)) {
+                alert("Please enter a valid URL.");
+                return;
+            }
+            window.open("qrpage.html?data=" + encodeURIComponent(text), "_self");
+        }
+    </script>
+ </head>
+    <body>
+        <button id="mode" align="right">Change Mode</button>
+        <div id="qr">
+        <marquee  scrollamount="20" direction="right"><img src="qrlogo.jpeg" alt="IMG" height="150" width="600"></marquee>
+        <table><tr>
+        <td><input id="text" style="padding-right: 200px;" type="text" placeholder="Enter a URL" ></td>
+        <td><button class="btn" type="submit" name="submit" onclick="openQRPage()">Generate</button></td>
+        </tr>    
+        </table>
+         <div id="qrcode" style="margin-left: 35%; margin-top: 20px;"></div> <!-- QR display box -->
+        </div>
+        <script>
+            const button = document.getElementById("mode");
+            button.addEventListener('click' , () => {
+
+                document.body.classList.toggle('dark-mode');
+
+                if(document.body.classList.contains('dark-mode')){
+                    button.textContent = "Change Mode";
+                }
+                else{
+                    button.textContent = "Change Mode";
+                }
+            });
+        </script>
+    
+
+    </body>
+</html>

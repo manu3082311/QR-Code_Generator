@@ -1,0 +1,76 @@
+
+        body {
+            background-size: cover;            
+            background-repeat: no-repeat;      
+            background-position: center;    
+            align-content:center;
+            background-color: rgb(223, 226, 232);
+       }
+
+        input{
+            background-color: rgb(207, 205, 246);
+            color: rgb(0, 0, 0);
+            font-size: x-large;   
+            border-radius: 30px;
+            font-weight: 600; 
+            padding: 10px 25px;
+           
+        }
+        table
+        {
+            margin-left: 30%;
+            border: 2px;
+        }
+        marquee
+        {
+            margin-left: 31%;
+            margin-right: 34%;
+        }
+        
+       
+        .btn {
+            color: rgb(0, 0, 0);
+            border-radius: 30px;
+            font-weight: 600;
+            padding: 10px 25px;
+            border: none;
+            transition: all 0.3s ease;
+            letter-spacing: 1px;
+            background-color: #396db6;
+            font-size:20px;
+        }
+        
+        .btn:hover {
+            background: #6196e1;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 110, 255, 0.3);
+        }
+         
+
+        #qrcode {
+             width:160px;
+             height:160px;
+             margin-top:15px;
+        }
+
+        body.dark-mode{
+            background-color: rgb(1, 11, 33);;
+        }
+
+        button[id="mode"]{
+            color: rgb(0, 0, 0);
+            border-radius: 50%;
+            font-weight: 600;
+            padding: 20px 20px;
+            border: none;
+            transition: all 0.3s ease;
+            background-color: #396db6;
+            font-size:15px;
+            margin-left:90%;
+        }
+
+        button[id="mode"]:hover{
+            background: #6196e1;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 110, 255, 0.3);
+        }
